@@ -5741,7 +5741,7 @@ main:focus{outline:none}
     function addRoom(key, x1, z1, x2, z2, label, pose){
       ROOMS.push({ key: key, x1: x1, z1: z1, x2: x2, z2: z2, label: label, pose: pose || null });
     }
-    addRoom('GREAT',   -6,   -8,    8,    6,     'Living');
+    addRoom('GREAT',   -6,   -8,    8,    6,     'Living',   { x: 1.8, z: -0.8, yaw: PI, pitch: 0, vfov: 66 });   /* stands between the sofas and the dining table, facing the terrace glass; the computed corner view sat behind the plants */
     addRoom('KITCHEN',  8,   -2,    16,   6,     'Kitchen');
     addRoom('EHALL',    8,   -14,   11,   -2,    'Hallway');
     addRoom('BR3',      11,  -14,   17,   -8,    'Bedroom');
